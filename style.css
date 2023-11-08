@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav img {
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+.carousel {
+    max-height: 95vh;
+}
+
+.carousel img {
+    max-height: 95vh;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-top: 5vh;
+    max-width: 60vw;
+}
+
+.item-list .card {
+    margin-bottom: 10vh;
+}
+
+table {
+    margin-left: 20vw;
+    max-width: 60vw;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.service-table h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.bootstrap-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 13.5vw;
+    margin-top: 5vh;
+    margin-left: 43.25vw;
+}
+
+footer {
+    height: 40vh;
+}
+
+#info-icon {
+    width: 20px;
+    margin-right: 20px;
+}
