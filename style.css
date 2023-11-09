@@ -56,6 +56,11 @@ h1 {
     margin-left: 43.25vw;
 }
 
+.card-img-top {
+    min-height: 215px;
+    object-fit: cover;
+}
+
 footer {
     height: 40vh;
 }

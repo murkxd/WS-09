@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Find the "Nabídka" link element
     const navLink = document.querySelector('a[aria-current="page"][href="#"]');
     
-    // Find the target section with the "item-list" id
-    const itemListSection = document.querySelector('#item-list');
+    const itemListSection = document.querySelector('#header-item-list');
 
-    // Add a click event listener to the "Nabídka" link
     navLink.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default link behavior
 
