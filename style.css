@@ -43,9 +43,28 @@ h1 {
     margin-top: 5vh;
 }
 
-.service-table h3 {
+h2 {
     display: flex;
     justify-content: center;
+}
+
+.card .accordion-body {
+    height: 40vh;
+}
+
+.service-table {
+    display: flex;
+    align-items: center;
+}
+
+.tbr {
+    margin-right: 21vw;
+    max-width: 20vw;
+}
+
+.lbr {
+    margin-bottom: 2vh;
+    width: 40vw;
 }
 
 .bootstrap-list {
@@ -74,6 +93,11 @@ h1 {
 .collapseitems a {
     margin-top: 10vh;
     margin: 1vw;
+}
+
+.faq-contact {
+    max-width: 30vw;
+    margin-left: 20vw;
 }
 
 .collapseitems {
