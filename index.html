@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <img src="./img/icons/icons8-car-48.png" alt="">
-          <a class="navbar-brand" href="#">Automobil.xd</a>
+          <a class="navbar-brand" href="./index.html">Automobil.xd</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,10 +27,12 @@
                 <a class="nav-link active" aria-current="page" href="#">Služby</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Naše prodejny</a>
+                <a class="nav-link active" aria-current="page" href="./faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
+                <button type="button" class="btn btn-dark mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Kontakt
+                </button>         
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -40,7 +42,48 @@
           </div>
         </div>
       </nav>
+    
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Kontakt na Autobazar</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Pro více informací nebo dotazy nás kontaktujte následujícím způsobem:
+              </p>
+              <ul>
+                <li><strong>E-mail:</strong> <a href="mailto:info@autobazar.cz">info@automobil.xd</a></li>
+                <li><strong>Telefon:</strong> +420 123 456 789</li>
+                <li><strong>Adresa:</strong> Autobazar, Ulice 123, Město, PSČ</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <main>
+      <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,24 +111,53 @@
             </button>
         </div>
 
-        <div class="bootstrap-list">
+        <div class="collapseitems">
           <p class="d-inline-flex gap-1">
-            <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Jaké značky vozů prodáváme
-            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle element 1</a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle element 2</a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle element 3</a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Toggle element 4</a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">Toggle element 5</a>
           </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <ul class="list-group">
-                <li class="list-group-item">Audi</li>
-                <li class="list-group-item">BMW</li>
-                <li class="list-group-item">Mazda</li>
-                <li class="list-group-item">Mercedes-Benz</li>
-                <li class="list-group-item">Volvo</li>
-              </ul>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body" id="collapsecard">
+                  Some placeholder content for element 1. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body" id="collapsecard">
+                  Some placeholder content for element 2. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body" id="collapsecard">
+                  Some placeholder content for element 3. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample4">
+                <div class="card card-body" id="collapsecard">
+                  Some placeholder content for element 4. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample5">
+                <div class="card card-body" id="collapsecard">
+                  Some placeholder content for element 5. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        
 
         <h1 id="header-item-list">Nabídka vozů</h1>
         <div class="item-list">
@@ -196,7 +268,7 @@
                   <li class="list-group-item"><img src="./img/icons/icons8-speedometer-50.png" id="info-icon" alt="">98 000km</li>
                 </ul>
                 <div class="card-body">
-                    <h4>9 900 EUR</h4>
+                    <h4>42 500 EUR</h4>
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
@@ -224,7 +296,7 @@
                   <li class="list-group-item"><img src="./img/icons/icons8-speedometer-50.png" id="info-icon" alt="">278 000km</li>
                 </ul>
                 <div class="card-body">
-                    <h4>9 900 EUR</h4>
+                    <h4>2 000 EUR</h4>
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
@@ -252,7 +324,7 @@
                   <li class="list-group-item"><img src="./img/icons/icons8-speedometer-50.png" id="info-icon" alt="">87 500km</li>
                 </ul>
                 <div class="card-body">
-                    <h4>9 900 EUR</h4>
+                    <h4>32 950 EUR</h4>
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>

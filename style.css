@@ -61,6 +61,33 @@ h1 {
     object-fit: cover;
 }
 
+.modal {
+    margin-top: 20vh;
+}
+
+#faqaccordion {
+    max-width: 60vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
+}
+
+.collapseitems a {
+    margin-top: 10vh;
+    margin: 1vw;
+}
+
+.collapseitems {
+    margin-left: 20vw;
+}
+
+#collapsecard {
+    max-width: 10vw;
+}
+
+.collapse {
+    margin: 0;
+}
+
 footer {
     height: 40vh;
 }
