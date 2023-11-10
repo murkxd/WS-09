@@ -49,7 +49,8 @@ h2 {
 }
 
 .card .accordion-body {
-    height: 40vh;
+    height: 20vh;
+    overflow: scroll;
 }
 
 .service-table {
