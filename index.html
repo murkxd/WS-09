@@ -11,7 +11,7 @@
     <title>Autobazar</title>
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <img src="./img/icons/icons8-car-48.png" alt="">
           <a class="navbar-brand" href="./index.html">Automobil.xd</a>
@@ -21,10 +21,10 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nabídka</a>
+                <a class="nav-link active" aria-current="page" href="#header-item-list">Nabídka</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Služby</a>
+                <a class="nav-link active" aria-current="page" href="#service-header-list">Služby</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./faq.html">FAQ</a>
@@ -68,22 +68,6 @@
       </div>
 
     <main>
-      <div class="modal" tabindex="-1" id="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -112,35 +96,20 @@
         </div>
 
         <h1 id="header-item-list">Nabídka vozů</h1>
-        <div class="item-list">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/cars/a6 3.0bitdi.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Audi A6 Competition</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Klikni zde pro popis auta
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Audi A6 BiTDI je výkonný luxusní sedan, který se vyznačuje dvouturbodmychadlovým motorem, quattro pohonem všech čtyř kol a moderním interiérem s vysokým standardem kvality. Tento automobil spojuje výkon, efektivitu a luxus, čímž nabízí skvělý zážitek z jízdy pro náročné řidiče.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><img src="./img/icons/icons8-engine-24.png" id="info-icon" alt="">3.0 V6 BiTDI 240kw</li>
-                  <li class="list-group-item"><img src="./img/icons/icons8-gas-station-50.png" id="info-icon" alt="">Diesel, 6.2l/100km</li>
-                  <li class="list-group-item"><img src="./img/icons/icons8-speedometer-50.png" id="info-icon" alt="">149 000km</li>
-                </ul>
-                <div class="card-body">
-                    <h4>29 500 EUR</h4>
-                    <button class="btn btn-dark" type="button">Více informací</button>
-                </div>
-              </div>
-
+        <div class="row" id="item-list">
+          <div class="col-4">
+            <div id="list-group-scrollspy" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Audi</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">BMW</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Mercedes-Benz</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Volvo</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Ostatní</a>
+            </div>
+          </div>
+          <div class="col-8" id="cars-list">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Audi</h4>
+              <div class="cars-group">
               <div class="card" style="width: 18rem;">
                 <img src="./img/cars/a6 3.0bitdi.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -197,6 +166,36 @@
                 </div>
               </div>
 
+              <div class="card" style="width: 18rem;">
+                <img src="./img/cars/a6 3.0bitdi.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Audi A6 Competition</h5>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Klikni zde pro popis auta
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Audi A6 BiTDI je výkonný luxusní sedan, který se vyznačuje dvouturbodmychadlovým motorem, quattro pohonem všech čtyř kol a moderním interiérem s vysokým standardem kvality. Tento automobil spojuje výkon, efektivitu a luxus, čímž nabízí skvělý zážitek z jízdy pro náročné řidiče.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><img src="./img/icons/icons8-engine-24.png" id="info-icon" alt="">3.0 V6 BiTDI 240kw</li>
+                  <li class="list-group-item"><img src="./img/icons/icons8-gas-station-50.png" id="info-icon" alt="">Diesel, 6.2l/100km</li>
+                  <li class="list-group-item"><img src="./img/icons/icons8-speedometer-50.png" id="info-icon" alt="">149 000km</li>
+                </ul>
+                <div class="card-body">
+                    <h4>29 500 EUR</h4>
+                    <button class="btn btn-dark" type="button">Více informací</button>
+                </div>
+              </div>
+              </div>
+              <h4 id="list-item-2">BMW</h4>
+              <div class="cars-group">
               <div class="card" style="width: 18rem;">
                 <img src="./img/cars/mh4 gtr.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -280,6 +279,10 @@
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
+              </div>
+
+              <h4 id="list-item-3">Mercedes-Benz</h4>
+              <div class="cars-group">
 
               <div class="card" style="width: 18rem;">
                 <img src="./img/cars/s124 e300.jpeg" class="card-img-top" alt="...">
@@ -364,6 +367,10 @@
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
+              </div>
+
+              <h4 id="list-item-4">Volvo</h4>
+              <div class="cars-group">
 
               <div class="card" style="width: 18rem;">
                 <img src="./img/cars/s80d5.jpeg" class="card-img-top" alt="...">
@@ -448,6 +455,9 @@
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
+              </div>
+              <h4 id="list-item-5">Ostatní</h4>
+              <div class="cars-group">
 
               <div class="card" style="width: 18rem;">
                 <img src="./img/cars/mazdaspeed3.jpeg" class="card-img-top" alt="...">
@@ -476,10 +486,14 @@
                     <button class="btn btn-dark" type="button">Více informací</button>
                 </div>
               </div>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
 
-        <h2>Naše služby</h2>
-        <div class="service-table">
+        <h2 class="mt-5" id="service-header-list">Naše služby</h2>
+        <div class="service-table mt-3">
           <div class="tbr">
             <table class="table table-bordered rounded">
               <thead>

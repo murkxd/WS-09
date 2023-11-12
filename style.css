@@ -19,17 +19,38 @@ nav img {
     max-height: 95vh;
 }
 
-.item-list {
+/* .item-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 20vw;
     margin-top: 5vh;
     max-width: 60vw;
+} */
+
+.cars-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vh;
+    max-width: 60vw;
 }
 
-.item-list .card {
-    margin-bottom: 10vh;
+#list-group-scrollspy {
+    max-width: 12vw;
+    margin-left: 3vw;
+}
+
+#cars-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    margin-top: 5vh;
+    max-width: 60vw;
+}
+
+#cars-list .card {
+    margin-left: 2vw;
 }
 
 table {
@@ -46,6 +67,12 @@ h1 {
 h2 {
     display: flex;
     justify-content: center;
+}
+
+#list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5 {
+    margin-top: 5vh;
+    margin-bottom: -4vh;
+    margin-left: 2vw;
 }
 
 .card .accordion-body {
