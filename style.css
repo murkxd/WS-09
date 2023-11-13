@@ -19,15 +19,6 @@ nav img {
     max-height: 95vh;
 }
 
-/* .item-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 20vw;
-    margin-top: 5vh;
-    max-width: 60vw;
-} */
-
 .cars-group {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +64,10 @@ h2 {
     margin-top: 5vh;
     margin-bottom: -4vh;
     margin-left: 2vw;
+}
+
+.nav-link {
+    color: white;
 }
 
 .card .accordion-body {
