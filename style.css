@@ -11,12 +11,21 @@ nav img {
     margin-right: 20px;
 }
 
-.carousel {
-    max-height: 95vh;
+.carousel img {
+    height: 100vh;
 }
 
-.carousel img {
-    max-height: 95vh;
+#hidden-spy {
+    margin-left: 10vw;
+}
+
+#hidden-spy .nav-link.active {
+    background-color: rgb(69, 69, 69);
+}
+
+#hidden-spy a {
+    text-decoration: none;
+    color: white;
 }
 
 .cars-group {
@@ -60,14 +69,20 @@ h2 {
     justify-content: center;
 }
 
-#list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5 {
+#list-item-1 {
+    margin-bottom: -4vh;
+    margin-left: 2vw;
+    margin-top: -5vh;
+}
+
+#list-item-2, #list-item-3, #list-item-4, #list-item-5 {
     margin-top: 5vh;
     margin-bottom: -4vh;
     margin-left: 2vw;
 }
 
 .nav-link {
-    color: white;
+    color: white !important;
 }
 
 .card .accordion-body {

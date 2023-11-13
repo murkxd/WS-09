@@ -21,20 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#navbar-example'
+        target: '#navbar-example',
     });
 });
 
 window.addEventListener("scroll", function () {
     const carousel = document.getElementById("carouselExampleIndicators");
     const navbar = document.getElementById("navbar");
-    const navbg = document.getElementById('navbg');
+    const navitem = document.getElementById("hidden-spy");
 
-
-    const rect = midText.getBoundingClientRect();
-
- 
-    if (rect.bottom < 5) {
+    if (carousel.bottom < 5) {
         navbar.classList.remove('lightnav');
         navbar.classList.add('darknav');
         navbg.classList.remove('lightnavbg');
